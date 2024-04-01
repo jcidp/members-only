@@ -1,9 +1,9 @@
 <h1>Clubhouse</h1>
 
-<% if @post %>
+<% if @posts %>
   <%= link_to "Create a post", new_post_path %>
   <div class="posts">
-    <% @post.each do |post| %>
+    <% @posts.each do |post| %>
       <div class="post">
         <h2><%= post.title %></h2>
         <p><%= post.body %></p>
